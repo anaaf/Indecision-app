@@ -1,8 +1,10 @@
+@import './base/settings';
+
 .big-button {
     border: $purple;
     border-bottom: $xs-size solid darken($purple, 10%); 
     background: $purple;
-    width: 50rem;
+    width: 60rem;
     height: 8rem;
     color: white;
     font-weight: bold;
@@ -35,3 +37,12 @@
     font-size: $m-size; 
     font-weight: 500;         
 }
+
+.button--modal {
+    width: 15rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+
