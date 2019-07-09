@@ -1,0 +1,30 @@
+.big-button {
+    border: $purple;
+    border-bottom: $xs-size solid darken($purple, 10%); 
+    background: $purple;
+    width: 50rem;
+    height: 8rem;
+    color: white;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $xl-size;
+    padding: 2.4rem;
+}
+
+.big-button:disabled{
+    opacity: 0.5;   
+}
+
+.button{
+    border: $purple;
+    border-bottom: $xs-size solid darken($purple, 10%); 
+    background: $purple;
+    color: white;
+    font-weight: 500;
+    font-size: $m-size;
+    margin-bottom: $xl-size;
+    padding: $s-size;
+    margin: $m-size $s-size;
+    height: 5rem;
+    border-radius: $xs-size;
+}
