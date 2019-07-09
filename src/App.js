@@ -6,7 +6,7 @@ import './Component/styling/App.scss'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <IndecisionApp />
     </div>
   );
