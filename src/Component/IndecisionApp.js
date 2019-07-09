@@ -68,9 +68,9 @@ class IndecisionApp extends Component {
 
   handleAddOption(option) {
     if(!option){
-      return 'Enter a valid option'
+      return 'Enter a valid value to add option'
     } else if(this.state.options.indexOf(option) > -1) {
-      return 'Enter a unique option'
+      return 'Option already exist'
     }
     this.setState((prevState) => ({ options : prevState.options.concat(option)}))
   }
@@ -79,17 +79,22 @@ class IndecisionApp extends Component {
     return (
       <div>
       <Header title = {this.state.title} subTitle = {this.state.subTitle} />
+      <div className="container">
       <Action 
       handlePick={this.handlePick} 
       hasOption = {this.hasOption} 
-        />
+      />
+      <div className="widget">
       <Options options = {this.state.options}
        handleDeleteOptions = {this.handleDeleteOptions}
        handleDeleteOption = {this.handleDeleteOption}
        />
-      <AddOption 
+       <AddOption 
       handleAddOption = {this.handleAddOption}
       />
+      </div>
+     
+      </div>
       </div>
     )
   }
