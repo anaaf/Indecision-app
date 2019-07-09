@@ -22,9 +22,16 @@
     color: white;
     font-weight: 500;
     font-size: $m-size;
-    margin-bottom: $xl-size;
     padding: $s-size;
-    margin: $m-size $s-size;
     height: 5rem;
     border-radius: $xs-size;
+}
+
+.button--link {
+    border: none;
+    background: none;
+    color: $off-white;
+    padding: 0;
+    font-size: $m-size; 
+    font-weight: 500;         
 }
