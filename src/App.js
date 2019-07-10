@@ -1,15 +1,10 @@
 import React from 'react';
-// import logo from './logo.svg';
 import 'normalize.css/normalize.css'
-import IndecisionApp from './Component/IndecisionApp';
-import './Component/styling/App.scss'
+import './styling/App.scss'
+import AppRouter from './Routers/AppRouter.js'
 
-function App() {
-  return (
-    <div>
-      <IndecisionApp />
-    </div>
-  );
-}
+const App = () => (
+  <AppRouter />
+)
 
-export default App;
+export default App; 
